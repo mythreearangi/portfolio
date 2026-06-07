@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#020024;
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#0b0b45;
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+}
+
+nav a:hover{
+    color:#9d4edd;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 30px;
+    background:#9d4edd;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:100px;
+    min-height:100vh;
+}
+
+#typing-text{
+    font-size:60px;
+    line-height:80px;
+}
+
+.hero-text p{
+    margin-top:20px;
+    width:70%;
+}
+
+.hero-image img{
+    width:380px;
+    height:380px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #9d4edd;
+}
+
+/* SECTIONS */
+
+.section{
+    padding:80px 100px;
+}
+
+.section h2{
+    font-size:50px;
+    margin-bottom:40px;
+}
+
+/* CARD */
+
+.card{
+    background:#11114f;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:25px;
+    display:flex;
+    justify-content:space-between;
+}
+
+/* SKILLS */
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.skill-box{
+    background:#9d4edd;
+    padding:15px 25px;
+    border-radius:10px;
+}
+
+/* PROJECTS */
+
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#11114f;
+    padding:25px;
+    border-radius:15px;
+}
+
+<!-- CERTIFICATIONS -->
+
+<section class="section" id="certifications">
+
+
+    <h2>Certifications 📜</h2>
+
+    <!-- THEORY -->
+
+    <ul class="achievement-list">
+
+        <li>Completed Data Science Certification Training</li>
+
+        <li>Certified in Full Stack Java Development</li>
+
+        <li>Completed Generative AI Workshop Program</li>
+
+        <li>Certified in Web Design and Development</li>
+
+        <li>Completed Python Programming Course</li>
+
+    </ul>
+
+    <!-- CERTIFICATE IMAGES -->
+
+    <div class="certificate-gallery">
+
+        <div class="certificate-card">
+            <img src="datascience1.jpg.jpeg" alt="">
+            <h3>Data Science Certificate</h3>
+        </div>
+
+        <div class="certificate-card">
+            <img src="datascience2.jpg.jpeg" alt="">
+            <h3>Data Science Certificate</h3>
+        </div>
+
+        <div class="certificate-card">
+            <img src="fullstackjava.jpg.jpeg" alt="">
+            <h3>Full Stack Java</h3>
+        </div>
+
+        <div class="certificate-card">
+            <img src="generativeai.png.png" alt="">
+            <h3>Generative AI</h3>
+        </div>
+
+        <div class="certificate-card">
+            <img src="webdesign.png.png" alt="">
+            <h3>Web Design & Development</h3>
+        </div>
+
+    </div>
+
+</section>/* LIST */
+
+.list li{
+    margin-bottom:20px;
+}
+
+/* CONTACT */
+
+.contact-container{
+    display:flex;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border:none;
+    border-radius:8px;
+}
+
+.contact-form button{
+    padding:15px;
+    border:none;
+    background:#9d4edd;
+    color:white;
+    border-radius:8px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0b0b45;
+    margin-top:50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-image img{
+        width:250px;
+        height:250px;
+        margin-top:40px;
+    }
+
+    .section{
+        padding:60px 30px;
+    }
+
+    .card{
+        flex-direction:column;
+    }
+}
